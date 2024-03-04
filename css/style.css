@@ -11,6 +11,9 @@
   height: 40px;
   margin-left: 10px;
 }
+:root .scrollspy-example {
+  height: 332px !important;
+}
 
 html {
   background-color: black;
@@ -52,6 +55,7 @@ html {
 
 #sezdex {
   border-radius: 8px;
+  height: 180px !important;
   background: rgb(90, 89, 3);
   background: linear-gradient(180deg, rgb(90, 89, 3) 0%, rgb(90, 89, 3) 0%, rgb(18, 18, 18) 36%);
 }
@@ -80,7 +84,6 @@ html {
 }
 
 .scrollspy-example {
-  max-height: 556px; /* Imposta un'altezza massima per l'area di scrollspy */
   overflow-y: auto; /* Aggiungi uno scroll verticale se necessario */
   padding: 10px; /* Aggiungi padding */
 }
@@ -193,5 +196,27 @@ html {
   justify-content: center;
 }
  */
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  z-index: 1;
+  order: 1;
+  border: 1px solid white;
+}
+
+#scroll2 {
+  height: 600px !important;
+  background: rgb(90, 89, 3);
+  background: linear-gradient(180deg, rgb(90, 89, 3) 0%, rgb(90, 89, 3) 0%, rgb(18, 18, 18) 36%);
+}
+
+.container-fluid {
+  max-height: 602px;
+  /* max-height: 300px; */ /* Imposta un'altezza massima */
+  /* o */
+  /* height: 200px; Imposta un'altezza fissa */
+  /* Puoi regolare il valore di altezza in base alle tue esigenze */
+}
 
 /*# sourceMappingURL=style.css.map */
