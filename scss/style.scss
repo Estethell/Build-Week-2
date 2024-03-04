@@ -12,6 +12,17 @@
   font-style: normal;
 }
 
+$colore: white;
+
+@mixin coloreDinamico($colore) {
+  color: $colore;
+  @if (lightness($colore) > 50) {
+    color: darken($colore, 12);
+  } @else {
+    color: lighten($colore, 12);
+  }
+}
+
 body {
   font-family: "Circular";
 }
@@ -19,7 +30,7 @@ body {
 .nomeArtista {
   font-size: 570%;
   font-weight: bolder;
-  line-height: 0.7;
+  line-height: 0.9;
 }
 
 .heroDiv {
@@ -27,6 +38,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 26em;
+  color: $colore;
+  @include coloreDinamico($colore);
 }
 
 .play {
