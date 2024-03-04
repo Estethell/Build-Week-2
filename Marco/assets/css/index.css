@@ -5,34 +5,131 @@
   margin: 0px;
   padding: 0;
 }
+:root {
+  .form-control {
+    border-radius: 30px;
+
+    height: 40px;
+    margin-left: 10px;
+  }
+}
 html {
   background-color: black;
 }
 .box1 {
-  background-color: #292929;
+  text-align: left;
+  display: flex;
+  background-color: #121212;
   border-radius: 8px;
-  width: 98%;
-  height: 100px;
+  width: 100%;
+  height: 140px;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: column;
+}
+.box1 p {
+  padding-top: 20px;
+  margin-left: 40px;
+}
+#box2 {
+  background-color: #121212;
 }
 .sidebar {
-  width: 98%;
-  background-color: #292929;
+  width: 100%;
+  /*   background-color: #292929 */
   border-radius: 8px;
   height: 600px;
   margin-top: 10px;
 }
-.navbar {
-  align-content: flex-start;
-}
+
 .container-fluid {
   margin-top: 12px;
-   background-color: black; /
+  background-color: black;
 }
 #sezdex {
-    border-radius: 8px;
-   
-    background: rgb(5,57,163);
-background: linear-gradient(180deg, rgba(5,57,163,1) 1%, rgba(41,41,41,1) 32%);
+  border-radius: 8px;
+
+  background: rgb(90, 89, 3);
+  background: linear-gradient(180deg, rgba(90, 89, 3, 1) 0%, rgba(90, 89, 3, 1) 0%, rgba(18, 18, 18, 1) 36%);
 }
-.nav{background-color: white;
-width: 100%;}
+.nav {
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: sticky;
+  /*   justify-content: space-between; */
+  top: 4px;
+  margin-bottom: 30px !important;
+}
+#rett {
+  width: 350px;
+
+  margin-bottom: 10px;
+  margin-right: 10px;
+  height: 40px;
+  background-color: #414141;
+}
+.scrollspy-example {
+  max-height: 556px; /* Imposta un'altezza massima per l'area di scrollspy */
+  overflow-y: auto; /* Aggiungi uno scroll verticale se necessario */
+  padding: 10px; /* Aggiungi padding */
+}
+/* .bg-body-tertiary {
+  --bs-bg-opacity: 1;
+}
+ */
+#navbar-example2 {
+  background-color: #121212;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid black;
+}
+#navbar-example2 p {
+  padding-top: 20px;
+  margin-left: 40px;
+}
+
+#svgbox {
+  color: white;
+}
+#piu {
+  margin-left: 135px;
+}
+.btnbox {
+  width: 100%;
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#btnside {
+  border-radius: 29px;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+.asx {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(13, 13, 13);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+.campanella {
+  background-color: rgb(13, 13, 13);
+  border-radius: 50%;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
