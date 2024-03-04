@@ -6,15 +6,17 @@
   padding: 0;
 }
 .box1 {
-  background-color: #121212;
+  background-color: #292929;
+  border-radius: 8px;
   width: 100%;
   height: 100px;
-  background-color: aquamarine;
 }
 .sidebar {
   width: 100%;
+  background-color: #292929;
+  border-radius: 8px;
   height: 600px;
-  background-color: blue;
+  margin-top: 10px;
 }
 .navbar {
   align-content: flex-start;
