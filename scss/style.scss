@@ -62,13 +62,15 @@ html {
   /*   justify-content: space-between; */
   top: 4px;
   margin-bottom: 30px !important;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
 }
 #rett {
-  width: 350px;
-
   margin-bottom: 10px;
-  margin-right: 10px;
+  display: flex;
   height: 40px;
+  margin-right: 2px;
   background-color: #414141;
 }
 .scrollspy-example {
@@ -132,4 +134,45 @@ html {
   height: 30px;
   justify-content: center;
   align-items: center;
+  /*  margin-left: 62%; */
 }
+#campanella1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  /*   margin-left: 62%; */
+}
+
+#logo1 {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: white;
+}
+.sez1 {
+  display: flex;
+  margin-right: 8px;
+  gap: 8px;
+  align-items: center;
+}
+
+.navbarsx {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+/* #container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ */
