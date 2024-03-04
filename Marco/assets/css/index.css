@@ -9,7 +9,6 @@ html {
   background-color: black;
 }
 .box1 {
-<<<<<<< HEAD
   background-color: #292929;
   border-radius: 8px;
   width: 98%;
@@ -28,12 +27,6 @@ html {
 .container-fluid {
   margin-top: 12px;
    background-color: black; /
-=======
-  height: 100px;
-}
-.sidebar {
-  height: 600px;
->>>>>>> 07b004fdad74f69292c1b1c962b7df2bf52627e3
 }
 #sezdex {
     border-radius: 8px;
@@ -41,6 +34,5 @@ html {
     background: rgb(5,57,163);
 background: linear-gradient(180deg, rgba(5,57,163,1) 1%, rgba(41,41,41,1) 32%);
 }
-#nav {
-    background-color: rgba(0, 0, 0, 0); /* Imposta l'opacità al 50% */
-  }
+.nav{background-color: white;
+width: 100%;}
