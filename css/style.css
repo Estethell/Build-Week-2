@@ -1,21 +1,25 @@
-/*# sourceMappingURL=style.css.map */
-
 #titolo_album {
   font-size: 11px;
 }
+
 .overi {
   opacity: 0.5;
   color: black;
 }
+
 .overi:hover {
   opacity: 0.8;
 }
 
 #img_album {
   width: 250px;
-  @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
+  #img_album {
     margin-top: 1rem;
     width: 60%;
     margin-bottom: 1.5rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
