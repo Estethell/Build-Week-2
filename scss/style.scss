@@ -13,7 +13,7 @@
     margin-left: 10px;
   }
   .scrollspy-example {
-    height: 332px !important;
+    height: 347px !important;
   }
 }
 html {
@@ -99,9 +99,9 @@ html {
 #svgbox {
   color: white;
 }
-#piu {
+/* #piu {
   margin-left: 135px;
-}
+} */
 .btnbox {
   width: 100%;
   display: flex;
@@ -116,6 +116,7 @@ html {
   padding-right: 6px !important;
 }
 .asx {
+  margin-right: 6px;
   display: flex;
   width: 30px;
   height: 30px;
@@ -199,4 +200,13 @@ footer {
   /* o */
   /* height: 200px; Imposta un'altezza fissa */
   /* Puoi regolare il valore di altezza in base alle tue esigenze */
+}
+.box3 {
+  display: flex;
+  width: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
