@@ -28,14 +28,16 @@
               rgba(88, 76, 31, 1) 59%,
               rgba(230, 198, 80, 1) 78%
             );
-            height: 100vh;
+            min-height: 100vh;
           "
         >
           <div>
-            <div class="d-md-flex flex-row justify-content-between align-items-center flex-fill py-3">
+            <div
+              class="d-none d-md-inline d-md-flex flex-row justify-content-between align-items-center flex-fill py-3"
+            >
               <div>
                 <i class="bi bi-arrow-left-circle-fill p-2 fs-2 overi"></i>
-                <i class="d-none d-md-inline bi bi-arrow-right-circle-fill fs-2 overi"></i>
+                <i class="bi bi-arrow-right-circle-fill fs-2 overi"></i>
               </div>
               <div>
                 <div class="dropdown d-none d-md-inline">
@@ -57,14 +59,30 @@
               </div>
             </div>
             <div class="d-md-flex flex-md-row align-items-end">
-              <img id="img_album" style="box-shadow: 0px 0 20px 0px" src="../assets/img/image-8.jpg" alt="" />
+              <div class="d-flex justify-content-center">
+                <i style="font-size: 50px" class="d-md-none bi bi-arrow-left text-light overi pe-5"></i>
+
+                <img
+                  id="img_album"
+                  style="box-shadow: 0px 0 20px 0px; display: inline"
+                  src="../assets/img/image-8.jpg"
+                  alt=""
+                  class="me-5"
+                />
+              </div>
               <div class="ms-3">
                 <h4 id="titolo_album" class="m-0 d-none d-md-flex">ALBUM</h4>
                 <h2 id="titoloCanzone" class="">Gioventù Brucata</h2>
-                <p>
+                <p class="d-none d-md-block">
                   <img class="rounded-circle" src="../assets/img/image-3.jpg" width="30" alt="" />
-                  Pinguini Tattici Nucleari - 2017 - 12 brani, <span class="">53 min 20 sec. </span>
+                  Pinguini Tattici Nucleari • 2017 • 12 brani,
+                  <span class="">53 min 20 sec. </span>
                 </p>
+                <p class="d-block d-md-none mb-2">
+                  <img class="rounded-circle me-2" src="../assets/img/image-3.jpg" width="30" alt="" />Pinguini tattici
+                  nucleari
+                </p>
+                <p class="d-block d-md-none opacity-50 mb-0">Album <span>• 2017</span></p>
               </div>
             </div>
           </div>
@@ -74,7 +92,7 @@
               width="45"
               height="45"
               fill="currentColor"
-              class="bi bi-play-circle-fill rounded-circle bg-black"
+              class="bi bi-play-circle-fill rounded-circle bg-black d-none d-md-block"
               viewBox="0 0 16 16"
               style="color: #1ed760"
             >
@@ -109,7 +127,7 @@
               <div class="d-flex align-items-center">
                 <div class="col-1 text-center text-light">1</div>
                 <div class="col-5 text-start text-light">
-                  <strong>Montanelli - intro </strong>
+                  <strong>Montanelli • intro </strong>
                   <p class="monospace fw-lighter m-0">Pinguini tattini nucleari</p>
                 </div>
                 <div class="col-3 text-start text-light d-flex justify-content-center">684.519</div>
@@ -120,7 +138,7 @@
               <div class="d-flex align-items-center">
                 <div class="col-1 text-center text-light">1</div>
                 <div class="col-5 text-start text-light">
-                  <strong>Montanelli - intro </strong>
+                  <strong>Montanelli • intro </strong>
                   <p class="monospace fw-lighter m-0">Pinguini tattini nucleari</p>
                 </div>
                 <div class="col-3 text-start text-light d-flex justify-content-center">684.519</div>
@@ -131,7 +149,7 @@
               <div class="d-flex align-items-center">
                 <div class="col-1 text-center text-light">1</div>
                 <div class="col-5 text-start text-light">
-                  <strong>Montanelli - intro </strong>
+                  <strong>Montanelli • intro </strong>
                   <p class="monospace fw-lighter m-0">Pinguini tattini nucleari</p>
                 </div>
                 <div class="col-3 text-start text-light d-flex justify-content-center">684.519</div>
