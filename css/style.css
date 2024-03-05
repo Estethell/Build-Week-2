@@ -239,15 +239,6 @@ h1 {
   padding-top: 30px;
 }
 
-footer {
-  background-color: black;
-  display: flex;
-  padding-top: 6px;
-  position: sticky;
-  justify-content: space-between;
-  padding-left: 10px;
-}
-
 .box {
   display: flex;
 }
@@ -258,6 +249,13 @@ img {
 
 .box7 {
   color: white;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
