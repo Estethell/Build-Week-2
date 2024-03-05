@@ -47,6 +47,7 @@
               </div>
             </div>
             <div class="d-flex flex-column ps-3">
+              <i class="d-md-none bi bi-arrow-left-circle-fill p-2 fs-2 overi"></i>
               <p class="ArtistaVer fs-5 fw-bold mb-0">
                 <i class="bi bi-patch-check-fill text-primary"></i>Artista verificato
               </p>
@@ -59,8 +60,8 @@
             <div class="artistBody">
               <div>
                 <div class="d-flex">
-                  <div class="d-flex align-items-center">
-                    <div class="m-3">
+                  <div class="d-flex align-items-center flex-grow-1 me-5">
+                    <div class="m-3 d-none d-md-block">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="45"
@@ -78,7 +79,24 @@
                     <button class="btn btn-outline-light mx-3 text-white fw-bolder fs-4 font-monospace">
                       Following
                     </button>
-                    <p class="fs-1 fw-bold text-secondary mx-3">...</p>
+                    <p class="fs-1 fw-bold text-secondary mx-3 flex-grow-1 ms-auto">...</p>
+                    <div class="d-flex">
+                      <div class="d-md-none d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="45"
+                          height="45"
+                          fill="currentColor"
+                          class="bi bi-play-circle-fill rounded-circle bg-black"
+                          viewBox="0 0 16 16"
+                          style="color: #1ed760"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -87,7 +105,11 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-7">
-                      <p class="fs-3 fw-bold text-white">Popolari</p>
+                      <div class="d-md-none d-flex align-items-center m-4">
+                        <img class="rounded-circle" src="../assets/img/image-3.jpg" alt="foto_Album" width="120px" />
+                        <p class="ps-4 fs-4 fw-bold text-white">Brani che ti piacciono</p>
+                      </div>
+                      <p class="ms-5 fs-3 fw-bold text-white">Popolari</p>
                       <!-- Inizio card -->
                       <div class="d-flex flex-column">
                         <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
@@ -99,93 +121,27 @@
                               alt="album_artista"
                               width="50px"
                             />
-                            <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            <div class="d-flex flex-column">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                            </div>
                           </div>
-                          <div><p class="text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="text-secondary fs-4 fs-bold m-0">TIME</p></div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
                         </div>
                       </div>
                       <!-- fine card -->
 
-                      <!-- Inizio card -->
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                          </div>
-                          <div><p class="text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <!-- Fine card -->
-                      <!-- Inizio card -->
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                          </div>
-                          <div><p class="text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <!-- Fine card -->
-                      <!-- Inizio card -->
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                          </div>
-                          <div><p class="text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <!-- Fine card -->
-                      <!-- Inizio card con visualizzazioni finale-->
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                          </div>
-                          <div><p class="text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                        <div>
-                          <p class="fs-5 font-monospace fw-bold text-secondary ms-5 ps-3">Visualizza altro</p>
-                        </div>
+                      <div>
+                        <p class="d-none d-md-block fs-5 font-monospace fw-bold text-secondary ms-5 ps-3">
+                          Visualizza altro
+                        </p>
                       </div>
                       <!-- Fine card -->
                     </div>
                     <!-- Fine colonna sinistra -->
                     <!-- Inizio colonna destra -->
-                    <div class="col-5">
+                    <div class="col-5 d-none d-md-block">
                       <div class="d-flex flex-column justify-content-start mx-4">
                         <p class="fs-3 fw-bold text-white">Brani che ti piacciono</p>
                         <img class="rounded-circle" src="../assets/img/image-3.jpg" alt="foto_Album" width="120px" />
@@ -200,8 +156,8 @@
             <!-- Inizio Footer -->
             <footer class="footer1 pb-5">
               <div class="container">
-                <div class="row">
-                  <div class="col-8">
+                <div class="row justify-content-around">
+                  <div class="col-8 d-none d-md-block">
                     <div class="d-flex justify-content-around my-5">
                       <div class="d-flex flex-column footerDiv">
                         <p class="fw-bold text-white">Azienda</p>
@@ -240,14 +196,16 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="my-5 border-top border-secondary border-1"></div>
-                  <div class="col"><a href="#" class="m-1 pe-2">Informazioni legali</a></div>
-                  <div class="col"><a href="#" class="m-1 pe-2">Sicurezza e Centro sulla privacy</a></div>
-                  <div class="col"><a href="#" class="m-1 pe-2">Informativa sulla privacy</a></div>
-                  <div class="col"><a href="#" class="m-1 pe-2">Impostazioni cookie</a></div>
-                  <div class="col"><a href="#" class="m-1 pe-2">Info annunci</a></div>
-                  <div class="col"><a href="#" class="m-1 pe-2">Accessibilità</a></div>
-                  <div class="col">
+                  <div class="d-none d-md-block my-5 border-top border-secondary border-1"></div>
+                  <div class="col d-none d-md-block"><a href="#" class="m-1 pe-2">Informazioni legali</a></div>
+                  <div class="col d-none d-md-block">
+                    <a href="#" class="m-1 pe-2">Sicurezza e Centro sulla privacy</a>
+                  </div>
+                  <div class="col d-none d-md-block"><a href="#" class="m-1 pe-2">Informativa sulla privacy</a></div>
+                  <div class="col d-none d-md-block"><a href="#" class="m-1 pe-2">Impostazioni cookie</a></div>
+                  <div class="col d-none d-md-block"><a href="#" class="m-1 pe-2">Info annunci</a></div>
+                  <div class="col d-none d-md-block"><a href="#" class="m-1 pe-2">Accessibilità</a></div>
+                  <div class="col d-none d-md-block">
                     <p class="text-secondary">@ 2024 Spotify AB</p>
                   </div>
                 </div>
