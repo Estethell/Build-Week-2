@@ -46,6 +46,24 @@ body {
   font-size: 80px;
 }
 
-.artistBody {
+.secondaParte {
   background-image: linear-gradient(to right bottom, #323232, #272727, #1c1c1c, #111111, #000000);
+}
+
+.footerBtn {
+  background-color: #000000;
+}
+
+.footerBtn:hover {
+  background-color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
 }
