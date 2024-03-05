@@ -13,7 +13,6 @@
   }
   --card-background-color: #121212;
   .container-fluid {
-    max-height: 619px;
   }
   .card {
     /* --bs-card-spacer-y: -3rem; */
@@ -59,7 +58,7 @@ html {
   background-color: var(--card-background-color);
   border-radius: 8px;
   width: 100%;
-  height: 107px;
+
   justify-content: center;
   align-content: flex-start;
   flex-direction: column;
@@ -77,7 +76,7 @@ html {
 .sidebar {
   width: 100%;
   border-radius: 8px;
-  height: 600px;
+
   margin-top: 10px;
 }
 
@@ -118,7 +117,7 @@ html {
 .scrollspy-example {
   overflow-y: auto;
   padding: 10px;
-  height: 367px;
+  height: 55vh;
 }
 
 #navbar-example2 {
@@ -222,7 +221,7 @@ footer {
 }
 
 #scroll2 {
-  height: 619px;
+  height: 90vh;
   background: linear-gradient(180deg, rgba(90, 89, 3, 1) 0%, rgba(90, 89, 3, 1) 0%, rgba(18, 18, 18, 1) 36%);
 }
 
@@ -257,136 +256,3 @@ h1 {
 }
 
 //-----------------------------------------------------------------------------------//
-* {
-  font-family: "Allerta", arial, Tahoma;
-  box-sizing: border-box;
-}
-body {
-  background: linear-gradient(to left, #7700aa, #8800ff);
-  text-align: center;
-  color: #fff;
-}
-h3 {
-  text-shadow: 1px 1px 1px #fff;
-}
-/* Start  styling the page */
-.container-audio {
-  margin-inline: auto;
-  width: 66%;
-  height: auto;
-  padding: 20px;
-  border-radius: 5px;
-  /* background-color: #eee; */
-  color: #444;
-  /* margin: 20px auto; */
-  overflow: hidden;
-}
-audio {
-  width: 100%;
-}
-audio:nth-child(2),
-audio:nth-child(4),
-audio:nth-child(6) {
-  margin: 0;
-}
-.container-audio .colum1 {
-  width: 23px;
-  height: 5em;
-  border-radius: 5px;
-  margin: 0 10px 0 0;
-  display: inline-block;
-  position: relative;
-}
-.container-audio .colum1:last-child {
-  margin: 0;
-}
-.container-audio .colum1 .row {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  background: linear-gradient(to up, #7700aa, #8800ff);
-  position: absolute;
-  -webkit-animation: Rofa 10s infinite ease-in-out;
-  animation: Rofa 10s infinite ease-in-out;
-  bottom: 0;
-}
-.container-audio .colum1:nth-of-type(1) .row {
-  -webkit-animation-delay: 3.99s;
-  animation-delay: 3.99s;
-}
-.container-audio .colum1:nth-of-type(2) .row {
-  -webkit-animation-delay: 3.8s;
-  animation-delay: 3.8s;
-}
-.container-audio .colum1:nth-of-type(3) .row {
-  -webkit-animation-delay: 3.7s;
-  animation-delay: 3.7s;
-}
-.container-audio .colum1:nth-of-type(4) .row {
-  -webkit-animation-delay: 3.6s;
-  animation-delay: 3.6s;
-}
-.container-audio .colum1:nth-of-type(5) .row {
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
-}
-.container-audio .colum1:nth-of-type(6) .row {
-  -webkit-animation-delay: 3.4s;
-  animation-delay: 3.4s;
-}
-.container-audio .colum1:nth-of-type(7) .row {
-  -webkit-animation-delay: 3.3s;
-  animation-delay: 3.3s;
-}
-.container-audio .colum1:nth-of-type(8) .row {
-  -webkit-animation-delay: 3.2s;
-  animation-delay: 3.2s;
-}
-.container-audio .colum1:nth-of-type(9) .row {
-  -webkit-animation-delay: 3.1s;
-  animation-delay: 3.1s;
-}
-.container-audio .colum1:nth-of-type(10) .row {
-  -webkit-animation-delay: 2.1s;
-  animation-delay: 2.1s;
-}
-.container-audio .colum1:nth-of-type(11) .row {
-  -webkit-animation-delay: 2.1s;
-  animation-delay: 2.1s;
-}
-.container-audio .colum1:nth-of-type(12) .row {
-  -webkit-animation-delay: 2.1s;
-  animation-delay: 2.1s;
-}
-.container-audio .colum1:nth-of-type(13) .row {
-  -webkit-animation-delay: 2.2s;
-  animation-delay: 2.2s;
-}
-.container-audio .colum1:nth-of-type(14) .row {
-  -webkit-animation-delay: 1.3s;
-  animation-delay: 1.3s;
-}
-.container-audio .colum1:nth-of-type(15) .row {
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
-}
-.container-audio .colum1:nth-of-type(16) .row {
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s;
-}
-.container-audio .colum1:nth-of-type(17) .row {
-  -webkit-animation-delay: 1.6s;
-  animation-delay: 1.6s;
-}
-.container-audio .colum1:nth-of-type(18) .row {
-  -webkit-animation-delay: 1.7s;
-  animation-delay: 1.7s;
-}
-.container-audio .colum1:nth-of-type(19) .row {
-  -webkit-animation-delay: 1.8s;
-  animation-delay: 1.8s;
-}
-.container-audio .colum1:nth-of-type(20) .row {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
