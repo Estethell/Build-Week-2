@@ -61,10 +61,6 @@ html {
   flex-direction: column;
 }
 
-/* .box1 p {
-  padding-top: 10px;
-  margin-left: 40px;
-} */
 #box2 {
   background-color: var(--card-background-color);
 }
@@ -219,16 +215,16 @@ footer {
   background: linear-gradient(180deg, rgb(90, 89, 3) 0%, rgb(90, 89, 3) 0%, rgb(18, 18, 18) 36%);
 }
 
-.container-fluid {
+/* .container-fluid {
   max-height: 602px;
-}
-
+} */
 .box3 {
   display: flex;
   width: 100%;
   justify-content: space-around;
   padding-top: 10px;
   padding-bottom: 10px;
+  gap: 50px;
 }
 
 .imgc {
@@ -248,6 +244,26 @@ h1 {
 
 #container1 {
   padding-top: 30px;
+}
+
+footer {
+  display: flex;
+  padding-top: 6px;
+  height: 50px;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.box {
+  display: flex;
+}
+
+img {
+  object-fit: cover;
+}
+
+.box7 {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
