@@ -207,14 +207,6 @@ html {
   gap: 5px;
 }
 
-footer {
-  width: 100%;
-
-  background-color: black;
-  z-index: 1;
-  order: 1;
-}
-
 #scroll2 {
   height: 90vh;
   background: linear-gradient(180deg, rgba(90, 89, 3, 1) 0%, rgba(90, 89, 3, 1) 0%, rgba(18, 18, 18, 1) 36%);
@@ -251,9 +243,11 @@ h1 {
   padding-top: 30px;
 }
 footer {
+  background-color: black;
   display: flex;
   padding-top: 6px;
-  height: 50px;
+  position: sticky;
+
   justify-content: space-between;
   padding-left: 10px;
 }
