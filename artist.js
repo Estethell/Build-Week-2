@@ -19,7 +19,7 @@ const artFetch = (artistId) => {
       console.log(artist);
       document.querySelector(".nomeArtista").innerText = artist.name;
       const heroDiv = document.querySelector(".heroDiv");
-      heroDiv.style.backgroundImage = "url('${artist')";
+      heroDiv.style.backgroundImage = `url(${artist.picture_xl})`;
     })
     .catch((errore) => console.log(errore));
 };

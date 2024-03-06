@@ -12,14 +12,14 @@
   font-style: normal;
 }
 
-$colore: white;
+$colore: rgb(2, 0, 3);
 
 @mixin coloreDinamico($colore) {
   color: $colore;
   @if (lightness($colore) > 50) {
-    color: darken($colore, 12);
+    color: darken($colore, 20);
   } @else {
-    color: lighten($colore, 12);
+    color: lighten($colore, 20);
   }
 }
 
