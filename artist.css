@@ -4,12 +4,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Circular";
   src: url(../fonts/CircularStd-Bold.otf);
   font-weight: 700;
   font-style: normal;
 }
+
 body {
   font-family: "Circular";
 }
@@ -25,9 +27,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 26em;
-  color: white;
-  color: white;
-  color: #e0e0e0;
 }
 
 .play {
@@ -58,11 +57,7 @@ a:hover {
 
 .popularImg {
   width: 60px;
-}
-@media screen and (min-width: 768px) {
-  .popularImg {
+  @media screen and (min-width: 768px) {
     width: 120px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
