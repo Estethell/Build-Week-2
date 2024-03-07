@@ -5,7 +5,12 @@
   margin: 0px;
   padding: 0;
 }
-
+:root {
+  .btn-dark {
+    --bs-btn-bg: none;
+    --bs-btn-border-color: none;
+  }
+}
 html {
   background-color: black;
 }
@@ -153,10 +158,4 @@ img {
 
 .box7 {
   color: white;
-}
-
-.foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
