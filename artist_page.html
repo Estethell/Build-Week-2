@@ -11,21 +11,21 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <link rel="stylesheet" href="./artist_page.html" />
+    <link rel="stylesheet" href="./artist.css" />
     <title>Artist page</title>
   </head>
-  <body class="text-bg-secondary">
+  <body>
     <div class="container-fluid">
       <div class="row">
         <div class="col-0 col-md-3 bg-info"></div>
 
         <!-- Inizio colonna destra -->
-        <div class="col-12 col-md-9 p-0">
+        <div class="col-12 col-md-9 p-0 colonnaDestra">
           <div class="heroDiv d-flex flex-column justify-content-end">
             <div class="d-none d-md-inline d-md-flex flex-row justify-content-between align-items-star flex-fill py-3">
               <div>
-                <i class="bi bi-arrow-left-circle-fill p-2 fs-2 overi"></i>
-                <i class="bi bi-arrow-right-circle-fill fs-2 overi"></i>
+                <i class="bi bi-arrow-left-circle-fill p-2 fs-2 overi sinistra"></i>
+                <i class="bi bi-arrow-right-circle-fill fs-2 overi destra"></i>
               </div>
               <div>
                 <div class="dropdown d-none d-md-inline">
@@ -35,7 +35,7 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img class="rounded-circle" src="./assets/imgs/main/image-3.jpg" width="30" alt="" />
+                    <img class="rounded-circle" src="../assets/img/image-3.jpg" width="30" alt="" />
                     Lidia Nautilus..
                   </button>
                   <ul class="dropdown-menu">
@@ -51,7 +51,7 @@
               <p class="ArtistaVer fs-5 fw-bold mb-0">
                 <i class="bi bi-patch-check-fill text-primary"></i>Artista verificato
               </p>
-              <h1 class="nomeArtista m-0">Nome artista</h1>
+              <h1 class="nomeArtista m-0 text-white">Nome artista</h1>
               <p class="fw-bold mt-4"><span>numero random</span> ascoltatori mensili</p>
             </div>
           </div>
@@ -104,14 +104,9 @@
               <div>
                 <div class="container">
                   <div class="row">
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                       <div class="d-md-none d-flex align-items-center m-4">
-                        <img
-                          class="rounded-circle"
-                          src="./assets/imgs/main/image-3.jpg"
-                          alt="foto_Album"
-                          width="120px"
-                        />
+                        <img class="popularImg rounded-circle" src="../assets/img/image-3.jpg" alt="foto_Album" />
                         <p class="ps-4 fs-4 fw-bold text-white">Brani che ti piacciono</p>
                       </div>
                       <p class="ms-5 fs-3 fw-bold text-white">Popolari</p>
@@ -122,7 +117,140 @@
                             <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
                             <img
                               class="imgArtist m-3"
-                              src="./assets/imgs/main/image-1.jpeg"
+                              src="../assets/img/image-1.jpeg"
+                              alt="album_artista"
+                              width="50px"
+                            />
+                            <div class="d-flex flex-column">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                            </div>
+                          </div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
+                          <div class="d-flex align-items-center">
+                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
+                            <img
+                              class="imgArtist m-3"
+                              src="../assets/img/image-1.jpeg"
+                              alt="album_artista"
+                              width="50px"
+                            />
+                            <div class="d-flex flex-column">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                            </div>
+                          </div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
+                          <div class="d-flex align-items-center">
+                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
+                            <img
+                              class="imgArtist m-3"
+                              src="../assets/img/image-1.jpeg"
+                              alt="album_artista"
+                              width="50px"
+                            />
+                            <div class="d-flex flex-column">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                            </div>
+                          </div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
+                          <div class="d-flex align-items-center">
+                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
+                            <img
+                              class="imgArtist m-3"
+                              src="../assets/img/image-1.jpeg"
+                              alt="album_artista"
+                              width="50px"
+                            />
+                            <div class="d-flex flex-column">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                            </div>
+                          </div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
+                          <div class="d-flex align-items-center">
+                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
+                            <img
+                              class="imgArtist m-3"
+                              src="../assets/img/image-1.jpeg"
+                              alt="album_artista"
+                              width="50px"
+                            />
+                            <div class="d-flex flex-column">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                            </div>
+                          </div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
+                          <div class="d-flex align-items-center">
+                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
+                            <img
+                              class="imgArtist m-3"
+                              src="../assets/img/image-1.jpeg"
+                              alt="album_artista"
+                              width="50px"
+                            />
+                            <div class="d-flex flex-column">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                            </div>
+                          </div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
+                          <div class="d-flex align-items-center">
+                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
+                            <img
+                              class="imgArtist m-3"
+                              src="../assets/img/image-1.jpeg"
+                              alt="album_artista"
+                              width="50px"
+                            />
+                            <div class="d-flex flex-column">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                            </div>
+                          </div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
+                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
+                          <div class="d-flex align-items-center">
+                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
+                            <img
+                              class="imgArtist m-3"
+                              src="../assets/img/image-1.jpeg"
                               alt="album_artista"
                               width="50px"
                             />
@@ -149,12 +277,7 @@
                     <div class="col-5 d-none d-md-block">
                       <div class="d-flex flex-column justify-content-start mx-4">
                         <p class="fs-3 fw-bold text-white">Brani che ti piacciono</p>
-                        <img
-                          class="rounded-circle"
-                          src="./assets/imgs/main/image-3.jpg"
-                          alt="foto_Album"
-                          width="120px"
-                        />
+                        <img class="popularImg rounded-circle" src="../assets/img/image-3.jpg" alt="foto_Album" />
                       </div>
                     </div>
                   </div>
@@ -228,5 +351,6 @@
         <!-- Fine colonna destra -->
       </div>
     </div>
+    <script src="./artist.js"></script>
   </body>
 </html>
