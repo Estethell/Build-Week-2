@@ -24,8 +24,8 @@
           <div class="heroDiv d-flex flex-column justify-content-end">
             <div class="d-none d-md-inline d-md-flex flex-row justify-content-between align-items-star flex-fill py-3">
               <div>
-                <i class="bi bi-arrow-left-circle-fill p-2 fs-2 overi sinistra"></i>
-                <i class="bi bi-arrow-right-circle-fill fs-2 overi destra"></i>
+                <i class="bi bi-arrow-left-circle-fill p-2 fs-2 overi" id="sinistra"></i>
+                <i class="bi bi-arrow-right-circle-fill fs-2 overi" id="destra"></i>
               </div>
               <div>
                 <div class="dropdown d-none d-md-inline">
@@ -102,175 +102,336 @@
               </div>
               <!-- inizio griglia colonna destra -->
               <div>
-                <div class="container">
+                <div class="container mx-5">
                   <div class="row">
                     <div class="col-12 col-md-7">
                       <div class="d-md-none d-flex align-items-center m-4">
                         <img class="popularImg rounded-circle" src="../assets/img/image-3.jpg" alt="foto_Album" />
                         <p class="ps-4 fs-4 fw-bold text-white">Brani che ti piacciono</p>
                       </div>
-                      <p class="ms-5 fs-3 fw-bold text-white">Popolari</p>
-                      <!-- Inizio card -->
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <div class="d-flex flex-column">
-                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
-                            </div>
-                          </div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <div class="d-flex flex-column">
-                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
-                            </div>
-                          </div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <div class="d-flex flex-column">
-                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
-                            </div>
-                          </div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <div class="d-flex flex-column">
-                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
-                            </div>
-                          </div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <div class="d-flex flex-column">
-                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
-                            </div>
-                          </div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <div class="d-flex flex-column">
-                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
-                            </div>
-                          </div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <div class="d-flex flex-column">
-                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
-                            </div>
-                          </div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-around ms-3 me-5 align-items-center">
-                          <div class="d-flex align-items-center">
-                            <p class="numberArtist text-secondary fs-5 fw-bold m-0">1</p>
-                            <img
-                              class="imgArtist m-3"
-                              src="../assets/img/image-1.jpeg"
-                              alt="album_artista"
-                              width="50px"
-                            />
-                            <div class="d-flex flex-column">
-                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
-                              <p class="d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
-                            </div>
-                          </div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p></div>
-                          <div><p class="d-none d-md-block text-secondary fs-4 fs-bold m-0">TIME</p></div>
-                        </div>
-                      </div>
-                      <!-- fine card -->
+                      <p class="fs-3 fw-bold text-white">Popolari</p>
+                      <div id="cards">
+                        <!-- Inizio cards -->
 
+                        <div class="container-fluid mb-4">
+                          <div class="row">
+                            <div class="col-1 p-0">
+                              <p
+                                class="numberArtist text-secondary fs-5 fw-bold m-0 pt-4 d-flex justify-content-end pe-3"
+                              >
+                                1
+                              </p>
+                            </div>
+                            <div class="col-2 p-0">
+                              <img
+                                class="imgArtist m-2"
+                                src="../assets/img/image-1.jpeg"
+                                alt="album_artista"
+                                width="50px"
+                              />
+                            </div>
+                            <div class="col-5 p-0">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            </div>
+                            <div class="col-3 p-0">
+                              <p class="numId d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              <div>
+                                <p class="numId d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              </div>
+                            </div>
+                            <div class="col-1 p-0">
+                              <div><p class="time d-none d-md-block text-secondary fs-4 fs-bold m-0 pe-3">TIME</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container-fluid mb-4">
+                          <div class="row">
+                            <div class="col-1 p-0">
+                              <p
+                                class="numberArtist text-secondary fs-5 fw-bold m-0 pt-4 d-flex justify-content-end pe-3"
+                              >
+                                2
+                              </p>
+                            </div>
+                            <div class="col-2 p-0">
+                              <img
+                                class="imgArtist m-2"
+                                src="../assets/img/image-1.jpeg"
+                                alt="album_artista"
+                                width="50px"
+                              />
+                            </div>
+                            <div class="col-5 p-0">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            </div>
+                            <div class="col-3 p-0">
+                              <p class="numId d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              <div>
+                                <p class="numId d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              </div>
+                            </div>
+                            <div class="col-1 p-0">
+                              <div><p class="time d-none d-md-block text-secondary fs-4 fs-bold m-0 pe-3">TIME</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container-fluid mb-4">
+                          <div class="row">
+                            <div class="col-1 p-0">
+                              <p
+                                class="numberArtist text-secondary fs-5 fw-bold m-0 pt-4 d-flex justify-content-end pe-3"
+                              >
+                                3
+                              </p>
+                            </div>
+                            <div class="col-2 p-0">
+                              <img
+                                class="imgArtist m-2"
+                                src="../assets/img/image-1.jpeg"
+                                alt="album_artista"
+                                width="50px"
+                              />
+                            </div>
+                            <div class="col-5 p-0">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            </div>
+                            <div class="col-3 p-0">
+                              <p class="numId d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              <div>
+                                <p class="numId d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              </div>
+                            </div>
+                            <div class="col-1 p-0">
+                              <div><p class="time d-none d-md-block text-secondary fs-4 fs-bold m-0 pe-3">TIME</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container-fluid mb-4">
+                          <div class="row">
+                            <div class="col-1 p-0">
+                              <p
+                                class="numberArtist text-secondary fs-5 fw-bold m-0 pt-4 d-flex justify-content-end pe-3"
+                              >
+                                4
+                              </p>
+                            </div>
+                            <div class="col-2 p-0">
+                              <img
+                                class="imgArtist m-2"
+                                src="../assets/img/image-1.jpeg"
+                                alt="album_artista"
+                                width="50px"
+                              />
+                            </div>
+                            <div class="col-5 p-0">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            </div>
+                            <div class="col-3 p-0">
+                              <p class="numId d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              <div>
+                                <p class="numId d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              </div>
+                            </div>
+                            <div class="col-1 p-0">
+                              <div><p class="time d-none d-md-block text-secondary fs-4 fs-bold m-0 pe-3">TIME</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container-fluid mb-4">
+                          <div class="row">
+                            <div class="col-1 p-0">
+                              <p
+                                class="numberArtist text-secondary fs-5 fw-bold m-0 pt-4 d-flex justify-content-end pe-3"
+                              >
+                                5
+                              </p>
+                            </div>
+                            <div class="col-2 p-0">
+                              <img
+                                class="imgArtist m-2"
+                                src="../assets/img/image-1.jpeg"
+                                alt="album_artista"
+                                width="50px"
+                              />
+                            </div>
+                            <div class="col-5 p-0">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            </div>
+                            <div class="col-3 p-0">
+                              <p class="numId d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              <div>
+                                <p class="numId d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              </div>
+                            </div>
+                            <div class="col-1 p-0">
+                              <div><p class="time d-none d-md-block text-secondary fs-4 fs-bold m-0 pe-3">TIME</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="lastCards d-none container-fluid mb-4">
+                          <div class="row">
+                            <div class="col-1 p-0">
+                              <p
+                                class="numberArtist text-secondary fs-5 fw-bold m-0 pt-4 d-flex justify-content-end pe-3"
+                              >
+                                6
+                              </p>
+                            </div>
+                            <div class="col-2 p-0">
+                              <img
+                                class="imgArtist m-2"
+                                src="../assets/img/image-1.jpeg"
+                                alt="album_artista"
+                                width="50px"
+                              />
+                            </div>
+                            <div class="col-5 p-0">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            </div>
+                            <div class="col-3 p-0">
+                              <p class="numId d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              <div>
+                                <p class="numId d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              </div>
+                            </div>
+                            <div class="col-1 p-0">
+                              <div><p class="time d-none d-md-block text-secondary fs-4 fs-bold m-0 pe-3">TIME</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="lastCards d-none container-fluid mb-4">
+                          <div class="row">
+                            <div class="col-1 p-0">
+                              <p
+                                class="numberArtist text-secondary fs-5 fw-bold m-0 pt-4 d-flex justify-content-end pe-3"
+                              >
+                                7
+                              </p>
+                            </div>
+                            <div class="col-2 p-0">
+                              <img
+                                class="imgArtist m-2"
+                                src="../assets/img/image-1.jpeg"
+                                alt="album_artista"
+                                width="50px"
+                              />
+                            </div>
+                            <div class="col-5 p-0">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            </div>
+                            <div class="col-3 p-0">
+                              <p class="numId d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              <div>
+                                <p class="numId d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              </div>
+                            </div>
+                            <div class="col-1 p-0">
+                              <div><p class="time d-none d-md-block text-secondary fs-4 fs-bold m-0 pe-3">TIME</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="lastCards d-none container-fluid mb-4">
+                          <div class="row">
+                            <div class="col-1 p-0">
+                              <p
+                                class="numberArtist text-secondary fs-5 fw-bold m-0 pt-4 d-flex justify-content-end pe-3"
+                              >
+                                8
+                              </p>
+                            </div>
+                            <div class="col-2 p-0">
+                              <img
+                                class="imgArtist m-2"
+                                src="../assets/img/image-1.jpeg"
+                                alt="album_artista"
+                                width="50px"
+                              />
+                            </div>
+                            <div class="col-5 p-0">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            </div>
+                            <div class="col-3 p-0">
+                              <p class="numId d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              <div>
+                                <p class="numId d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              </div>
+                            </div>
+                            <div class="col-1 p-0">
+                              <div><p class="time d-none d-md-block text-secondary fs-4 fs-bold m-0 pe-3">TIME</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="lastCards d-none container-fluid mb-4">
+                          <div class="row">
+                            <div class="col-1 p-0">
+                              <p
+                                class="numberArtist text-secondary fs-5 fw-bold m-0 pt-4 d-flex justify-content-end pe-3"
+                              >
+                                9
+                              </p>
+                            </div>
+                            <div class="col-2 p-0">
+                              <img
+                                class="imgArtist m-2"
+                                src="../assets/img/image-1.jpeg"
+                                alt="album_artista"
+                                width="50px"
+                              />
+                            </div>
+                            <div class="col-5 p-0">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            </div>
+                            <div class="col-3 p-0">
+                              <p class="numId d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              <div>
+                                <p class="numId d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              </div>
+                            </div>
+                            <div class="col-1 p-0">
+                              <div><p class="time d-none d-md-block text-secondary fs-4 fs-bold m-0 pe-3">TIME</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="lastCards d-none container-fluid mb-4">
+                          <div class="row">
+                            <div class="col-1 p-0">
+                              <p
+                                class="numberArtist text-secondary fs-5 fw-bold m-0 pt-4 d-flex justify-content-end pe-3"
+                              >
+                                10
+                              </p>
+                            </div>
+                            <div class="col-2 p-0">
+                              <img
+                                class="imgArtist m-2"
+                                src="../assets/img/image-1.jpeg"
+                                alt="album_artista"
+                                width="50px"
+                              />
+                            </div>
+                            <div class="col-5 p-0">
+                              <p class="titleArtist m-0 fw-bold fs-5 text-white">Titolo album</p>
+                            </div>
+                            <div class="col-3 p-0">
+                              <p class="numId d-md-none text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              <div>
+                                <p class="numId d-none d-md-block text-secondary fs-4 fs-bold m-0">Numero ID</p>
+                              </div>
+                            </div>
+                            <div class="col-1 p-0">
+                              <div><p class="time d-none d-md-block text-secondary fs-4 fs-bold m-0 pe-3">TIME</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- fine cards -->
+                      </div>
                       <div>
-                        <p class="d-none d-md-block fs-5 font-monospace fw-bold text-secondary ms-5 ps-3">
+                        <p
+                          class="visualizza nonVisualizza d-none d-md-block fs-5 font-monospace fw-bold text-secondary ms-5 ps-3"
+                        >
                           Visualizza altro
                         </p>
                       </div>
-                      <!-- Fine card -->
                     </div>
                     <!-- Fine colonna sinistra -->
                     <!-- Inizio colonna destra -->

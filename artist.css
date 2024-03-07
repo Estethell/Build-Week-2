@@ -77,3 +77,7 @@ a:hover {
 .overi:hover {
   opacity: 0.8;
 }
+
+.titleArtist {
+  width: 50%;
+}
