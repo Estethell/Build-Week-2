@@ -68,3 +68,12 @@ a:hover {
   height: 100vh;
   overflow-y: auto;
 }
+
+.overi {
+  opacity: 0.5;
+  color: black;
+}
+
+.overi:hover {
+  opacity: 0.8;
+}
