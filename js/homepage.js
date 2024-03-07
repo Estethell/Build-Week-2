@@ -3,22 +3,21 @@ const rows = document.getElementById("row1");
 // Creazione card dinamica
 function createCard(image, title, description) {
   const col = document.createElement("div");
-  col.className = "col-3";
+  col.className = "col-6 col-xl-2 col-md-4";
 
   const cardDiv = document.createElement("div");
   cardDiv.className = "card";
 
   const img = document.createElement("img");
-  img.className = "card-img-top"; // Aggiunto per corrispondere al Bootstrap 4
+  img.className = "card-img prova";
   img.src = image;
 
   cardDiv.appendChild(img);
-
   const cardBody = document.createElement("div");
-  cardBody.className = "card-body";
+  cardBody.className = "card-body m-0 prova2";
 
   const cardTitle = document.createElement("h5");
-  cardTitle.className = "card-title";
+  cardTitle.className = "card-title pb-0";
   cardTitle.textContent = title;
   cardBody.appendChild(cardTitle);
 
@@ -29,13 +28,7 @@ function createCard(image, title, description) {
 
   cardDiv.appendChild(cardBody);
   col.appendChild(cardDiv);
-  rows.appendChild(col); // rows[0] -> rows, poiché getElementById restituisce già l'elemento corretto
-
-  // Aggiungo la classe "imgc" all'elemento img
-  const imgs = document.querySelectorAll(".card-img-top");
-  imgs.forEach((img) => {
-    img.classList.add("imgc");
-  });
+  rows.appendChild(col);
 }
 
 const home = (artistId) => {
@@ -64,7 +57,7 @@ const home = (artistId) => {
 };
 
 window.onload = () => {
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 6; i++) {
     let artistId = Math.floor(Math.random() * 900);
     home(artistId);
   }
