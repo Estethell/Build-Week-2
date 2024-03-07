@@ -55,7 +55,7 @@ html {
   display: flex;
   background-color: var(--card-background-color);
   border-radius: 8px;
-  width: 100%;
+  /*  width: 100%; */
   justify-content: center;
   align-content: flex-start;
   flex-direction: column;
@@ -66,7 +66,6 @@ html {
 }
 
 .sidebar {
-  width: 100%;
   border-radius: 8px;
   margin-top: 10px;
 }
@@ -79,14 +78,14 @@ html {
 
 #sezdex {
   border-radius: 8px;
-  height: 180px;
+
   background: linear-gradient(180deg, rgb(90, 89, 3) 0%, rgb(90, 89, 3) 0%, rgb(18, 18, 18) 36%);
 }
 
-.nav {
+/* .nav {
   background-color: transparent;
   display: flex;
-  width: 100%;
+  
   height: 50px;
   position: sticky;
   top: 4px;
@@ -94,13 +93,11 @@ html {
   list-style: none;
   align-items: center;
   justify-content: flex-start;
-}
+} */
 
 .rett {
   display: flex;
-  margin-bottom: 10px;
-  display: flex;
-  height: 40px;
+
   background-color: rgba(65, 65, 65, 0.2784313725);
   align-items: center;
 }
@@ -116,28 +113,11 @@ html {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom: 1px solid black;
-  height: 135px;
-}
-
-.p1 {
-  padding-top: 20px;
-  margin-left: 40px;
+  /*  height: 135px; */
 }
 
 #svgbox {
   color: white;
-}
-
-.btnbox {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-#btnside {
-  border-radius: 29px;
-  padding-left: 6px;
-  padding-right: 6px;
 }
 
 .asx {
@@ -219,6 +199,7 @@ html {
   padding-top: 10px;
   padding-bottom: 10px;
   gap: 50px;
+  align-items: center;
 }
 
 .imgc {
