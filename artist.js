@@ -2,7 +2,7 @@ const url = "https://striveschool-api.herokuapp.com/api/deezer/artist/";
 
 // const artistId = new URLSearchParams(window.location.search).get("id");
 
-const artistId = 55;
+const artistId = 555;
 
 const artFetch = (artistId) => {
   fetch(url + artistId, {
