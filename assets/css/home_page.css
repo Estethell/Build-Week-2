@@ -23,6 +23,7 @@ html {
 
 #box2 {
   background-color: var(--card-background-color);
+  height: 61vh;
 }
 
 .sidebar {
@@ -42,19 +43,6 @@ html {
   background: linear-gradient(180deg, rgb(90, 89, 3) 0%, rgb(90, 89, 3) 0%, rgb(18, 18, 18) 36%);
 }
 
-/* .nav {
-  background-color: transparent;
-  display: flex;
-  
-  height: 50px;
-  position: sticky;
-  top: 4px;
-  margin-bottom: 30px;
-  list-style: none;
-  align-items: center;
-  justify-content: flex-start;
-} */
-
 .rett {
   display: flex;
 
@@ -65,17 +53,9 @@ html {
 .scrollspy-example {
   overflow-y: auto;
   padding: 10px;
-  height: 55vh;
+  /* height: 61vh; */
 }
 
-/* #navbar-example2 {
-  background-color: #121212;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom: 1px solid black;
-  /*  height: 135px; */
-
-/* }  */
 .asx {
   margin-right: 6px;
   display: flex;
@@ -141,22 +121,9 @@ html {
 }
 
 #scroll2 {
-  height: 90vh;
+  /* height: 90vh; */
   background: linear-gradient(180deg, rgb(90, 89, 3) 0%, rgb(90, 89, 3) 0%, rgb(18, 18, 18) 36%);
 }
-
-/* .container-fluid {
-  max-height: 602px;
-} */
-/* .box3 {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  gap: 50px;
-  align-items: center;
-} */
 
 .imgc {
   margin-inline: auto;
@@ -192,8 +159,5 @@ img {
 .foot {
   display: flex;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
 }
-
-/*# sourceMappingURL=style.css.map */
