@@ -67,6 +67,7 @@ const home = (artistId) => {
   })
     .then((response) => {
       if (response.ok) {
+        console.log(response);
         return response.json();
       } else {
         throw new Error("Errore nella richiesta");
