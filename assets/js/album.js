@@ -82,12 +82,55 @@ function createCar2(nameArtist, description, riproduzioni, i, image) {
     tattici nucleari
   </p>
   <p class="d-block d-md-none opacity-50 mb-0">Album <span>• 2017</span></p>
-</div>`;
+</div>
+`;
 }
 let i = 0;
-const home = (artistId) => {
-  const url = `https://deezerdevs-deezer.p.rapidapi.com/artist/${artistId}`;
+albums = [331450807, 595243, 313707257, 71570, 138127572];
+
+const ProvaAlbum = (randomIdAlbum) => {
+  console.log(randomIdAlbum);
+  // const url = `https://deezerdevs-deezer.p.rapidapi.com/artist/${artistId}`;
   // const url = "https://deezerdevs-deezer.p.rapidapi.com/album/331450807";
+  const urlAlbum = `https://deezerdevs-deezer.p.rapidapi.com/album/${randomIdAlbum}`;
+
+  fetch(urlAlbum, {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "d52bd1556bmshda71f6c1f7a2b47p14ba97jsndc56d619a8cf",
+      "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        console.log(response);
+        return response.json();
+      } else {
+        throw new Error("Errore nella richiesta");
+      }
+    })
+    .then((artist) => {
+      console.log(artist);
+      const image = artist.artist.picture;
+      const riproduzioni = Math.floor(Math.random() * 899) + 100 + "." + (Math.floor(Math.random() * 899) + 100);
+      const minuti = Math.floor(Math.random() * 4) + 2 + ":" + (Math.floor(Math.random() * 50) + 10);
+      const nameArtist = artist.artist.name;
+      const description = artist.artist.type;
+      const tracks = artist.tracks.data[0].preview;
+      console.log(tracks);
+
+      i++;
+      createCard(nameArtist, description, riproduzioni, i, minuti);
+      createCar2(nameArtist, description, riproduzioni, i, image);
+      createcardsx(image, nameArtist, description, row);
+    })
+    .catch((error) => console.log(`Errore: ${error}`));
+};
+
+const home = (artistId) => {
+  console.log(artistId);
+  const url = `https://deezerdevs-deezer.p.rapidapi.com/artist/${artistId}`;
+
   fetch(url, {
     method: "GET",
     headers: {
@@ -123,5 +166,7 @@ window.onload = () => {
   for (let i = 0; i < 10; i++) {
     let artistId = Math.floor(Math.random() * 900);
     home(artistId);
+    // let randomIdAlbum = albums[Math.floor(Math.random() * albums.length)];
+    // ProvaAlbum(randomIdAlbum);
   }
 };
