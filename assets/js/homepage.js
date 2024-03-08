@@ -101,10 +101,14 @@ const home = (artistId, row) => {
 
 window.onload = () => {
   for (let i = 0; i < 6; i++) {
-    let artistId = Math.floor(Math.random() * 900);
-    home(artistId, row);
-    home(artistId, row2);
-    home(artistId, row3);
-    home(artistId, row4);
+    let artistId1 = Math.floor(Math.random() * 900);
+    let artistId2 = Math.floor(Math.random() * 900);
+    let artistId3 = Math.floor(Math.random() * 900);
+    let artistId4 = Math.floor(Math.random() * 900);
+
+    home(artistId1, row);
+    home(artistId2, row2);
+    home(artistId3, row3);
+    home(artistId4, row4);
   }
 };
