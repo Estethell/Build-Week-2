@@ -31,6 +31,7 @@ function createCard(image, title, description, row) {
 
   const cardDiv = document.createElement("div");
   cardDiv.className = "card";
+  cardDiv.style.height = "252px";
 
   const img = document.createElement("img");
   img.className = "card-img prova";
@@ -40,7 +41,7 @@ function createCard(image, title, description, row) {
   const cardBody = document.createElement("div");
   cardBody.className = "card-body m-0 prova2";
 
-  const cardTitle = document.createElement("h5");
+  const cardTitle = document.createElement("p");
   cardTitle.className = "card-title pb-0";
   cardTitle.textContent = title;
   cardDiv.appendChild(cardTitle);
