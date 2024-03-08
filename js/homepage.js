@@ -1,4 +1,5 @@
 const rows = document.getElementById("row1");
+const rows2 = document.getElementById("row2");
 
 // Creazione card dinamica
 function createCard(image, title, description) {
@@ -59,6 +60,6 @@ const home = (artistId) => {
 window.onload = () => {
   for (let i = 0; i < 6; i++) {
     let artistId = Math.floor(Math.random() * 900);
-    home(artistId);
+    home(artistId, rows2);
   }
 };
