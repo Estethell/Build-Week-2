@@ -58,6 +58,7 @@ function createCar2(nameArtist, description, riproduzioni, i, image) {
 let i = 0;
 const home = (artistId) => {
   const url = `https://deezerdevs-deezer.p.rapidapi.com/artist/${artistId}`;
+  // const url = "https://deezerdevs-deezer.p.rapidapi.com/album/331450807";
   fetch(url, {
     method: "GET",
     headers: {
