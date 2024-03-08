@@ -2,6 +2,7 @@ const row = document.getElementById("row1");
 const row2 = document.getElementById("row2");
 const row3 = document.getElementById("row3");
 const row4 = document.getElementById("row4");
+
 const id = new URLSearchParams(window.location.search);
 
 function createcardsx(image, titolo, description) {
