@@ -2,15 +2,15 @@ const canzone = document.getElementById("prova");
 
 // Creazione card dinamica
 // Creazione card dinamica
-function createCard(nameArtist, description) {
+function createCard(nameArtist, description, riproduzioni, i) {
   canzone.innerHTML += `
   <div class="d-flex align-items-center" id="canzone">
-  <div class="col-1 d-none d-md-inline text-center text-light">1</div>
+  <div class="col-1 d-none d-md-inline text-center text-light">${i}</div>
   <div class="col-5 text-start text-light">
     <strong>${nameArtist} • intro </strong>
     <p class="monospace fw-lighter m-0">${description}</p>
   </div>
-  <div class="col-3 text-start text-light d-none d-md-flex justify-content-center">684.519</div>
+  <div class="col-3 text-start text-light d-none d-md-flex justify-content-center">${riproduzioni}</div>
   <div class="col-2 text-end me-3 ms-auto d-none d-md-inline opacity opacity-50">1:28</div>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +26,7 @@ function createCard(nameArtist, description) {
   </svg>
 </div>`;
 }
+let i = 0;
 const home = (artistId) => {
   const url = `https://deezerdevs-deezer.p.rapidapi.com/artist/${artistId}`;
   fetch(url, {
@@ -45,9 +46,12 @@ const home = (artistId) => {
     .then((artist) => {
       console.log(artist);
       //   const image = artist.picture;
+      const riproduzioni = Math.floor(Math.random() * 900) + "." + Math.floor(Math.random() * 900);
       const nameArtist = artist.name;
       const description = artist.type;
-      createCard(nameArtist, description);
+
+      i++;
+      createCard(nameArtist, description, riproduzioni, i);
     })
     .catch((error) => console.log(`Errore: ${error}`));
 };
