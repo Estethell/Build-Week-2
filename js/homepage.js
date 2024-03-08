@@ -1,8 +1,31 @@
-const rows = document.getElementById("row1");
-const rows2 = document.getElementById("row2");
+const row = document.getElementById("row1");
+const row2 = document.getElementById("row2");
+const row3 = document.getElementById("row3");
+const row4 = document.getElementById("row4");
 
-// Creazione card dinamica
-function createCard(image, title, description) {
+function createcardsx(image, titolo, description) {
+  const body = document.getElementById("box2");
+  const row = document.createElement("div");
+  const col = document.createElement("div");
+  /* 
+  row.className = "row col-12 align-items-center mb-3";
+  col.className = "col-2"; */
+
+  const img = document.createElement("img");
+  img.className = "card-img prova";
+  img.src = image;
+  img.style.width = "20%";
+  img.style.height = "20%";
+  body.appendChild(row);
+  row.appendChild(col);
+  col.appendChild(img);
+  const cardTitle = document.createElement("h5");
+  cardTitle.className = "card-title ";
+  cardTitle.textContent = titolo;
+  row.appendChild(cardTitle);
+}
+// Creazione card dinamica dx
+function createCard(image, title, description, row) {
   const col = document.createElement("div");
   col.className = "col-6 col-xl-2 col-md-4";
 
@@ -20,19 +43,14 @@ function createCard(image, title, description) {
   const cardTitle = document.createElement("h5");
   cardTitle.className = "card-title pb-0";
   cardTitle.textContent = title;
-  cardBody.appendChild(cardTitle);
-
-  const cardText = document.createElement("p");
-  cardText.className = "card-text";
-  cardText.textContent = description;
-  cardBody.appendChild(cardText);
+  img.appendChild(cardTitle);
 
   cardDiv.appendChild(cardBody);
   col.appendChild(cardDiv);
-  rows.appendChild(col);
+  row.appendChild(col);
 }
 
-const home = (artistId) => {
+const home = (artistId, row) => {
   const url = `https://deezerdevs-deezer.p.rapidapi.com/artist/${artistId}`;
   fetch(url, {
     method: "GET",
@@ -52,7 +70,8 @@ const home = (artistId) => {
       const image = artist.picture;
       const title = artist.name;
       const description = artist.type;
-      createCard(image, title, description);
+      createCard(image, title, description, row);
+      createcardsx(image, title, description, row);
     })
     .catch((error) => console.log(`Errore: ${error}`));
 };
@@ -60,6 +79,9 @@ const home = (artistId) => {
 window.onload = () => {
   for (let i = 0; i < 6; i++) {
     let artistId = Math.floor(Math.random() * 900);
-    home(artistId, rows2);
+    home(artistId, row);
+    home(artistId, row2);
+    home(artistId, row3);
+    home(artistId, row4);
   }
 };
