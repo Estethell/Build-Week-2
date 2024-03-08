@@ -159,11 +159,14 @@ img {
 .box7 {
   color: white;
 }
-.prova {
+/* .prova {
   width: auto;
   height: 150px;
   object-fit: cover;
 }
 .prova2 {
   height: 110px;
+}
+ */
+.card:hover {
 }

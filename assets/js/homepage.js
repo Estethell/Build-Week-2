@@ -14,10 +14,15 @@ function createcardsx(image, titolo, description) {
   const img = document.createElement("img");
   img.className = "card-img prova";
   img.src = image;
-  img.style.width = "20%";
-  img.style.height = "20%";
+  img.style.width = "50px";
+  img.style.height = "50px";
+  img.style.marginLeft = "20px";
   body.appendChild(row);
   row.appendChild(col);
+  row.style.display = "flex";
+  row.style.alignItems = "center";
+  row.style.gap = "10px";
+  row.style.marginBottom = "20px";
   col.appendChild(img);
   const cardTitle = document.createElement("h5");
   cardTitle.className = "card-title ";
@@ -38,13 +43,19 @@ function createCard(image, title, description, row) {
 
   cardDiv.appendChild(img);
   const cardBody = document.createElement("div");
-  cardBody.className = "card-body m-0 prova2";
+  cardBody.className = " m-0 prova2";
 
-  const cardTitle = document.createElement("h5");
+  const cardTitle = document.createElement("p");
   cardTitle.className = "card-title pb-0";
   cardTitle.textContent = title;
   cardDiv.appendChild(cardTitle);
   cardTitle.style.paddingTop = "20px";
+
+  const paragrafo = document.createElement("p");
+  paragrafo.className = " pb-0";
+  paragrafo.textContent = "Artist";
+  cardTitle.appendChild(paragrafo);
+  paragrafo.style.paddingTop = "20px";
 
   cardDiv.appendChild(cardBody);
   col.appendChild(cardDiv);
