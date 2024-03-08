@@ -73,16 +73,11 @@ function createCar2(nameArtist, description, riproduzioni, i, image) {
   <h4 id="titolo_album" class="m-0 d-none d-md-flex">ALBUM</h4>
   <h2 id="titoloCanzone" class="">${nameArtist}</h2>
   <p class="d-none d-md-block">
-    <img class="rounded-circle" src="./assets/imgs/main/image-3.jpg" width="30" alt="" />
-    Pinguini Tattici Nucleari • 2017 • 12 brani,
+    <img class="rounded-circle" src="${image}" width="30" alt="" />
+    ${nameArtist} • 2017 • 12 brani,
     <span class="">53 min 20 sec. </span>
   </p>
-  <p class="d-block d-md-none mb-2">
-    <img class="rounded-circle me-2" src="./assets/imgs/main/image-3.jpg" width="30" alt="" />Pinguini
-    tattici nucleari
-  </p>
-  <p class="d-block d-md-none opacity-50 mb-0">Album <span>• 2017</span></p>
-</div>
+
 `;
 }
 let i = 0;
