@@ -20,6 +20,7 @@ function createcardsx(image, titolo, description) {
   row.style.display = "flex";
   row.style.alignItems = "center";
   row.style.gap = "10px";
+  row.id = "cardSinistra";
   row.style.marginBottom = "20px";
   col.appendChild(img);
   const cardTitle = document.createElement("h5");
