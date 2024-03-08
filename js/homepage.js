@@ -14,8 +14,8 @@ function createcardsx(image, titolo, description) {
   const img = document.createElement("img");
   img.className = "card-img prova";
   img.src = image;
-  /*   img.style.width = "20%";
-  img.style.height = "20%"; */
+  img.style.width = "20%";
+  img.style.height = "20%";
   body.appendChild(row);
   row.appendChild(col);
   col.appendChild(img);
@@ -43,12 +43,7 @@ function createCard(image, title, description, row) {
   const cardTitle = document.createElement("h5");
   cardTitle.className = "card-title pb-0";
   cardTitle.textContent = title;
-  cardBody.appendChild(cardTitle);
-
-  const cardText = document.createElement("p");
-  cardText.className = "card-text";
-  cardText.textContent = description;
-  cardBody.appendChild(cardText);
+  img.appendChild(cardTitle);
 
   cardDiv.appendChild(cardBody);
   col.appendChild(cardDiv);
