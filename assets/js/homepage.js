@@ -2,6 +2,7 @@ const row = document.getElementById("row1");
 const row2 = document.getElementById("row2");
 const row3 = document.getElementById("row3");
 const row4 = document.getElementById("row4");
+const id = new URLSearchParams(window.location.search);
 
 function createcardsx(image, titolo, description) {
   const body = document.getElementById("box2");
@@ -30,7 +31,7 @@ function createcardsx(image, titolo, description) {
   row.appendChild(cardTitle);
 }
 // Creazione card dinamica dx
-function createCard(image, title, description, row) {
+function createCard(image, title, description, id, row) {
   const col = document.createElement("div");
   col.className = "col-6 col-xl-2 col-md-4";
 
@@ -44,22 +45,31 @@ function createCard(image, title, description, row) {
   cardDiv.appendChild(img);
   const cardBody = document.createElement("div");
   cardBody.className = " m-0 prova2";
-
+  //-----------------------------------------------------------------------
+  const link = document.createElement("a");
+  link.href = "./artist.html";
+  cardDiv.appendChild(link);
+  //-------------------------------------------------
   const cardTitle = document.createElement("p");
   cardTitle.className = "card-title pb-0";
-  cardTitle.textContent = title;
+  cardTitle.innerText = title;
   cardDiv.appendChild(cardTitle);
   cardTitle.style.paddingTop = "20px";
 
   const paragrafo = document.createElement("p");
   paragrafo.className = " pb-0";
-  paragrafo.textContent = "Artist";
+  paragrafo.innerText = "Artist";
   cardTitle.appendChild(paragrafo);
   paragrafo.style.paddingTop = "20px";
 
   cardDiv.appendChild(cardBody);
   col.appendChild(cardDiv);
   row.appendChild(col);
+
+  //-------------------------------------------------------------------------------
+  cardTitle.addEventListener("click", () => {
+    location.href = `./artist.html?artistId=${id}`;
+  });
 }
 
 const home = (artistId, row) => {
@@ -79,10 +89,11 @@ const home = (artistId, row) => {
       }
     })
     .then((artist) => {
+      const id = artist.id;
       const image = artist.picture;
       const title = artist.name;
       const description = artist.type;
-      createCard(image, title, description, row);
+      createCard(image, title, description, id, row);
       createcardsx(image, title, description, row);
     })
     .catch((error) => console.log(`Errore: ${error}`));

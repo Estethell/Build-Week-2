@@ -2,7 +2,7 @@ const url = "https://striveschool-api.herokuapp.com/api/deezer/artist/";
 
 // const artistId = new URLSearchParams(window.location.search).get("id");
 const prova = "https://striveschool-api.herokuapp.com/api/deezer/artist/100/top?limit=50";
-const artistId = Math.floor(Math.random() * 900);
+const artistId = new URLSearchParams(window.location.search).get("artistId");
 console.log(artistId);
 
 function random(min, max) {
