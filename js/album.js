@@ -26,13 +26,32 @@ function createCard(nameArtist, description, riproduzioni, i) {
   </svg>
 </div>`;
 }
+const contenutoSuperiore = document.getElementById("contenutoSuperiore");
+
+function createCar2(nameArtist, description, riproduzioni, i) {
+  contenutoSuperiore.innerHTML = `<div id="contenutoSuperiore" class="ms-3">
+                  <h4 id="titolo_album" class="m-0 d-none d-md-flex">ALBUM</h4>
+                  <h2 id="titoloCanzone" class="">Gioventù Brucata</h2>
+                  <p class="d-none d-md-block">
+                    <img class="rounded-circle" src="./assets/imgs/main/image-3.jpg" width="30" alt="" />
+                    ${nameArtist} • 2017 • 12 brani,
+                    <span class="">53 min 20 sec. </span>
+                  </p>
+                  <p class="d-block d-md-none mb-2">
+                    <img class="rounded-circle me-2" src="./assets/imgs/main/image-3.jpg" width="30" alt="" />Pinguini
+                    tattici nucleari
+                  </p>
+                  <p class="d-block d-md-none opacity-50 mb-0">Album <span>• 2017</span></p>
+                </div>
+              </div>`;
+}
 let i = 0;
 const home = (artistId) => {
   const url = `https://deezerdevs-deezer.p.rapidapi.com/artist/${artistId}`;
   fetch(url, {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "dc1411bb79msh7fda284dd2f7bdcp11ace5jsnd42d9d71ed13",
+      "X-RapidAPI-Key": "d52bd1556bmshda71f6c1f7a2b47p14ba97jsndc56d619a8cf",
       "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
     },
   })
@@ -52,6 +71,7 @@ const home = (artistId) => {
 
       i++;
       createCard(nameArtist, description, riproduzioni, i);
+      createCar2(nameArtist, description, riproduzioni, i);
     })
     .catch((error) => console.log(`Errore: ${error}`));
 };
