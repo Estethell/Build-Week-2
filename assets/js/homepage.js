@@ -43,7 +43,8 @@ function createCard(image, title, description, row) {
   const cardTitle = document.createElement("h5");
   cardTitle.className = "card-title pb-0";
   cardTitle.textContent = title;
-  img.appendChild(cardTitle);
+  cardDiv.appendChild(cardTitle);
+  cardTitle.style.paddingTop = "20px";
 
   cardDiv.appendChild(cardBody);
   col.appendChild(cardDiv);
