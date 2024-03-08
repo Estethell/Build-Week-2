@@ -72,3 +72,8 @@ a {
 
   cursor: pointer;
 }
+.homeCerca:hover {
+  background-color: #292a2a;
+
+  cursor: pointer;
+}
