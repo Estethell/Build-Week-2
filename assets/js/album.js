@@ -57,7 +57,7 @@ function createCard(nameArtist, description, riproduzioni, i, minuti) {
 }
 const contenutoSuperiore = document.getElementById("contenutoSuperiore");
 
-function createCar2(nameArtist, description, riproduzioni, i, image) {
+function createCar2(nameArtist, description, riproduzioni, i, image, numeroBrani, minutiAlbum) {
   contenutoSuperiore.innerHTML = ` <div id="contenutoSuperiore3" class="d-flex justify-content-center">
   <i style="font-size: 7vw" class="d-md-none mt-3 bi bi-arrow-left text-light overi pe-5"></i>
 
@@ -74,8 +74,8 @@ function createCar2(nameArtist, description, riproduzioni, i, image) {
   <h2 id="titoloCanzone" class="">${nameArtist}</h2>
   <p class="d-none d-md-block">
     <img class="rounded-circle" src="${image}" width="30" alt="" />
-    ${nameArtist} • 2017 • 12 brani,
-    <span class="">53 min 20 sec. </span>
+    ${nameArtist} • 2017 • ${numeroBrani} brani,
+    <span class="">${minutiAlbum} min 20 sec. </span>
   </p>
 
 `;
@@ -148,10 +148,12 @@ const home = (artistId) => {
       const minuti = Math.floor(Math.random() * 4) + 2 + ":" + (Math.floor(Math.random() * 50) + 10);
       const nameArtist = artist.name;
       const description = artist.type;
+      const numeroBrani = Math.floor(Math.random() * 24 + 1);
+      const minutiAlbum = Math.floor(Math.random() * 150 + 20);
 
       i++;
       createCard(nameArtist, description, riproduzioni, i, minuti);
-      createCar2(nameArtist, description, riproduzioni, i, image);
+      createCar2(nameArtist, description, riproduzioni, i, image, numeroBrani, minutiAlbum);
       createcardsx(image, nameArtist, description, row);
     })
     .catch((error) => console.log(`Errore: ${error}`));
