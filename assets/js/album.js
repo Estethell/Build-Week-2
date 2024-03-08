@@ -1,4 +1,33 @@
 const canzone = document.getElementById("prova");
+const row = document.getElementById("row1");
+
+function createcardsx(image, titolo, description) {
+  const body = document.getElementById("box2");
+  const row = document.createElement("div");
+  const col = document.createElement("div");
+  /* 
+  row.className = "row col-12 align-items-center mb-3";
+  col.className = "col-2"; */
+
+  const img = document.createElement("img");
+  img.className = "card-img prova";
+  img.src = image;
+  img.style.width = "50px";
+  img.style.height = "50px";
+  img.style.marginLeft = "20px";
+  body.appendChild(row);
+  row.appendChild(col);
+  row.style.display = "flex";
+  row.style.alignItems = "center";
+  row.style.gap = "10px";
+  row.id = "cardSinistra";
+  row.style.marginBottom = "20px";
+  col.appendChild(img);
+  const cardTitle = document.createElement("h5");
+  cardTitle.className = "card-title ";
+  cardTitle.textContent = titolo;
+  row.appendChild(cardTitle);
+}
 
 // Creazione card dinamica
 // Creazione card dinamica
@@ -58,6 +87,7 @@ function createCar2(nameArtist, description, riproduzioni, i, image) {
 let i = 0;
 const home = (artistId) => {
   const url = `https://deezerdevs-deezer.p.rapidapi.com/artist/${artistId}`;
+  // const url = "https://deezerdevs-deezer.p.rapidapi.com/album/331450807";
   fetch(url, {
     method: "GET",
     headers: {
@@ -67,6 +97,7 @@ const home = (artistId) => {
   })
     .then((response) => {
       if (response.ok) {
+        console.log(response);
         return response.json();
       } else {
         throw new Error("Errore nella richiesta");
@@ -75,7 +106,7 @@ const home = (artistId) => {
     .then((artist) => {
       console.log(artist);
       const image = artist.picture;
-      const riproduzioni = Math.floor(Math.random() * 900) + "." + (Math.floor(Math.random() * 899) + 100);
+      const riproduzioni = Math.floor(Math.random() * 899) + 100 + "." + (Math.floor(Math.random() * 899) + 100);
       const minuti = Math.floor(Math.random() * 4) + 2 + ":" + (Math.floor(Math.random() * 50) + 10);
       const nameArtist = artist.name;
       const description = artist.type;
@@ -83,12 +114,13 @@ const home = (artistId) => {
       i++;
       createCard(nameArtist, description, riproduzioni, i, minuti);
       createCar2(nameArtist, description, riproduzioni, i, image);
+      createcardsx(image, nameArtist, description, row);
     })
     .catch((error) => console.log(`Errore: ${error}`));
 };
 
 window.onload = () => {
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 10; i++) {
     let artistId = Math.floor(Math.random() * 900);
     home(artistId);
   }
